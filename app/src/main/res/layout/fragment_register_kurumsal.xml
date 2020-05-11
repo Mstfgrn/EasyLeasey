@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragments.RegisterKurumsalFragment">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_Ksahisadi"
+        android:layout_width="265sp"
+        android:layout_height="wrap_content"
+        android:hint="Şahıs Adı ve Soyadı"
+        android:inputType="text"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/text_K"
+        android:layout_width="265sp"
+        android:layout_height="wrap_content"
+        android:hint="Şirket Adı"
+        android:inputType="text"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Ksahisadi"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_KUnvan"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:hint="Şirket Ünvanı"
+        android:inputType="text"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_K"
+        app:layout_constraintVertical_bias="0.0015" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_Keposta"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:hint="E-Posta"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_KUnvan"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_KmersisNo"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:hint="MERSİS No"
+        android:inputType="number"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Keposta"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <Button
+        android:id="@+id/btn_Ksonraki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="@drawable/btn_gradient_style"
+        android:text="Sonraki"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_KmersisNo"
+        app:layout_constraintVertical_bias="0.334" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

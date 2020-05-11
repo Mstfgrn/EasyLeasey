@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragments.RegisterBireyselFragment">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_BAdi"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:hint="Adınız"
+        android:inputType="text"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_BSoyAdi"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:hint="Soyadınız"
+        android:inputType="text"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_BAdi"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_Tckimlik"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:hint="TC kimlik no"
+        android:inputType="number"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_BSoyAdi"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_BEposta"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:hint="E-Posta"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Tckimlik"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_BehliyetNo"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:hint="Ehliyet Numaranız"
+        android:inputType="number"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_BEposta"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <Spinner
+        android:id="@+id/Bspinner"
+        android:layout_width="265dp"
+        android:layout_height="34dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_BehliyetNo"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btn_Bsonraki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Sonraki"
+        android:textColor="#fff"
+        android:background="@drawable/btn_gradient_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bspinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

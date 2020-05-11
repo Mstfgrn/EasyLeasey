@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Purpose_page">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Lütfen Yapmak İstediğiniz İşlemi Seçiniz"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/add_new"
+                android:layout_width="150dp"
+                android:layout_height="500dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="35dp"
+                android:padding="30dp"
+                android:text="İlan Vermek istiyorum"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:gravity="bottom|center"
+                android:background="@drawable/btn_gradient_style"
+                android:alpha="0.8"
+                android:layout_alignParentStart="true">
+
+            </Button>
+
+            <ImageView
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:background="@drawable/ilan_verme"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignTop="@+id/add_new"
+            android:layout_alignLeft="@+id/add_new"
+            android:elevation="2dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/rentcar"
+                android:layout_width="150dp"
+                android:layout_height="500dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="35dp"
+                android:padding="30dp"
+                android:text="Araç Kiralamak istiyorum"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:gravity="bottom|center"
+                android:background="@drawable/btn_gradient_style2"
+                android:alpha="0.7"
+                android:layout_marginEnd="35dp"
+                android:layout_alignParentEnd="true">
+
+            </Button>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/pngbarn"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_alignTop="@+id/rentcar"
+                android:layout_alignLeft="@+id/rentcar"
+                android:elevation="2dp"
+                android:layout_marginStart="25dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

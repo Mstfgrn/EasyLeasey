@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Anasayfa"
+        android:icon="@drawable/ic_homeblack"
+        ></item>
+
+    <item
+        android:id="@+id/nav_myads"
+        android:title="İlanlarım"
+        android:icon="@drawable/ic_ads"
+        ></item>
+
+    <item
+        android:id="@+id/nav_add"
+        android:title="İlan Ver"
+        android:icon="@drawable/ic_add"
+        ></item>
+
+    <item
+        android:id="@+id/nav_chat"
+        android:title="Sohbet"
+        android:icon="@drawable/ic_chat"
+        ></item>
+
+
+
+    <item
+        android:id="@+id/nav_profil"
+        android:title="Profil"
+        android:icon="@drawable/ic_profil"
+        ></item>
+</menu>

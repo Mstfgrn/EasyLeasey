@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Filter_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Lütfen Bilgileri Doldurunuz"
+        android:textSize="22sp"
+        android:textColor="#252525"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <EditText
+            android:id="@+id/alistarihi"
+            android:inputType="date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alış Tarihini Seçiniz"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/alissaati"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alış Saati Seçiniz"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:inputType="time"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/iadetarihi"
+            android:inputType="date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="İade Tarihi Seçiniz"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/iadesaati"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İade Saati Seçiniz"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:inputType="time"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/konum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Alış Konumu Seçiniz"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:focusable="false"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_filter"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_gradient_style"
+            android:text="KİRALA"
+            android:textColor="#ffffff"
+            android:textSize="18sp"></Button>
+    </RelativeLayout>
+</LinearLayout>
